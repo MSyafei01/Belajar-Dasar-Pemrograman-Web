@@ -186,8 +186,6 @@ nav.kalog li{
 }
 
 
-
-
 aside {
     flex: 5;
 
@@ -195,8 +193,6 @@ aside {
 
 main {
     padding: 20px;
-    display: flex;
-    gap: 1.5rem;
 }
 
 header {
@@ -235,4 +231,10 @@ header {
 .containerfooter a:hover {
     text-decoration: underline;
     color: #000000;
+}
+
+article {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
 }
