@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/positioning.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Belajar Materi Positioning</title>
+
+</head>
+<header>
+        <h1>    Positioning</h1>
+        <section>
+        <p>Materi ini membahas tentang cara mengatur posisi elemen dalam halaman web menggunakan CSS.</p>
+        <p>Dengan materi ini semoga skill kedepannya bisa bertambah</p>
+        </section>
+
+
+        <h2>1. Positioning: Relative Positioning</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aut corporis deleniti doloremque 
+            et excepturi expedita labore libero, placeat, quaerat rerum ullam vitae voluptate. Accusantium et 
+            explicabo qui tenetur unde. Amet aperiam doloremque enim, expedita id illo minima porro quod.</p>
+        <p class="relative">
+            Sebagaimana yang kita ketahui sebelumnya, dengan menetapkan relative pada properti position, 
+            kita dapat melakukan perpindahan posisi elemen ke atas, kanan, bawah, ataupun kiri. 
+            Perpindahan posisi yang dilakukan tidak akan berpengaruh terhadap posisi elemen di sekitarnya. 
+            Hal ini karena ketika menggunakan relative positioning elemen tersebut akan dipindahkan dari normal 
+            flow. Untuk menggunakan relative positioning, kita tetapkan nilai relative pada properti position.
+            Dengan code 
+    [.relative {
+    position: relative;
+    width: 900px;
+    height: 300px;
+    background-color: #c5e4f2;
+    top: 10px;
+    left: 100px;}]
+
+        setelah menetapkan nilai position pada paragraf kedua, kita mengubah posisinya menjadi 10 piksel lebih 
+        bawah dan 100 piksel lebih ke kanan dari posisi yang seharusnya. Perlu kita ingat bahwa perpindahan 
+        posisi mengacu pada posisi elemen seharusnya.
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aut corporis deleniti doloremque 
+            et excepturi expedita labore libero, placeat, quaerat rerum ullam vitae voluptate. Accusantium et 
+            explicabo qui tenetur unde. Amet aperiam doloremque enim, expedita id illo minima porro quod.
+        </p>
+        <br>
+
+    </header>
+
+<body>
+    <div class="parent">
+<h2 class="absolute">2. Positioning: Absolute Positioning</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aut corporis deleniti doloremque 
+            et excepturi expedita labore libero, placeat, quaerat rerum ullam vitae voluptate. Accusantium et 
+            explicabo qui tenetur unde. Amet aperiam doloremque enim, expedita id illo minima porro quod.
+        </p>
+        <p>
+            Dengan menetapkan absolute pada properti position, kita dapat melakukan perpindahan posisi elemen 
+            ke atas, kanan, bawah, ataupun kiri. Perpindahan posisi yang dilakukan akan berpengaruh terhadap 
+            posisi elemen di sekitarnya. Hal ini karena ketika menggunakan absolute positioning elemen tersebut 
+            akan dipindahkan dari normal flow. Untuk menggunakan absolute positioning, kita tetapkan nilai 
+            absolute pada properti position. Dengan code [.absolute]
+        </p>
+        <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aut corporis deleniti
+    doloremque et excepturi expedita labore libero, placeat, quaerat rerum ullam vitae voluptate.
+    Accusantium et explicabo qui tenetur unde. Amet aperiam doloremque enim, expedita id illo
+    minima porro quod.
+        </p>
+</div>
+
+        <h2 class="fixed">3. Positioning: Fixed Positioning</h2>
+        <p>Fixed positioning merupakan absolute position. Namun, posisinya selalu relatif pada jendela browser 
+            (meskipun diletakkan dalam induk elemen di luar flow normal). Bahkan, ketika pengguna melakukan 
+            scrolling, posisinya akan tetap tampak pada posisinya di layar.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem sunt aliquid unde magnam sed, 
+            dolore tempora porro blanditiis? Facilis nemo officia sapiente, aliquid itaque a eum non molestias 
+            quam architecto.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quia vitae at. Quo expedita similique 
+            impedit rerum adipisci nobis odit, dolores eius, maxime porro voluptatum in aliquid amet repudiandae 
+            error!</p>
+
+        <p>Ketika pengguna melakukan scrolling pada halaman, elemen heading tetap berada pada posisi yang 
+            sama dan paragraf yang ditampilkan tampak di belakang elemen heading tersebut.</p>
+
+        <h2>4. Floating</h2>
+            <div class="container">
+                <div class="left-content">
+                    <h3 class="center1">Left Content</h3>
+                <img src="https://media.licdn.com/dms/image/v2/D4D03AQFHjfojHl9McA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1721838602219?e=1756339200&v=beta&t=was07S4I2iTwjiVy1vtSapVXT-lUn3J7FkeMKRiZtTY" 
+                alt="foto profil"  
+                width="200" height="200">  
+                    <p>Foto Profil</p>
+                </div>
+                    <div class="center-content">
+                        <h3 class="center2">Center Content</h3>
+                        <img src="data:image/jpeg;base64,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" 
+                        alt="Honda CBR" width="200" height="200">
+                        <p>Kendaraan Impian</p>
+                    </div>
+                <div class="right-content">
+                    <h3 class="center3">Right Content</h3>
+                    <img src="E:/KULIAH/PELATIHAN IT/Dicoding/Tahap3/css/img/desainrumah.jpg" 
+                    alt="rumah estetik"
+                    width="200" height="200">
+                    <p>Rumah impian</p>
+            </div>
+</div>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet asperiores commodi corporis
+        doloribus eum ipsum obcaecati pariatur quam quo, voluptatum? A, assumenda atque delectus
+        dolore nam natus neque quisquam repudiandae?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. At deserunt illum inventore
+        numquam officia recusandae, sit! Ab asperiores delectus dolor, eius est explicabo impedit
+        ipsa ipsum itaque mollitia neque nihil nisi officia praesentium sint! Accusantium libero
+        obcaecati provident qui? Error!
+    </p>
+    <p>
+        kita akan membuat konten kanan kiri
+    </p>
+</body>
+</html>
