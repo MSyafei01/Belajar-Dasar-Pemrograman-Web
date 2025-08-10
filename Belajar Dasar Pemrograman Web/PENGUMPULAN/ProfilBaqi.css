@@ -1,49 +1,33 @@
+/* ===== HEADER & NAVIGATION ===== */
 h1 {
     color: #ffffff;
     font-size: 50px;
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background : linear-gradient(to right, #52d2ef, #000000, #2b99f3);
+    background: linear-gradient(to right, #52d2ef, #000000, #2b99f3);
     padding: 20px;
 }
 
 .Profil {
     font-size: 20px;
-    padding: 1px ;
-    background : linear-gradient(to right, #52d2ef, #000000, #2b99f3);
+    padding: 5px;
+    background: linear-gradient(to right, #52d2ef, #000000, #2b99f3);
     text-align: center;
     color: white;
 }
 
 nav.kalog {
     position: sticky;
-    top: 0px;
+    top: 0;
     padding: 5px;
-    box-shadow: -0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: background-color 1s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-nav.kalog li{
-    
-    list-style-type: none;
-    margin-right: 50px;
-    font-size: 15px;
-}
-
-.kalog {
-    
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.kalog ul {
+nav.kalog ul {
     padding-inline: 4rem;
     display: flex;
-
     gap: 2rem;
+    list-style: none;
 }
 
 .kalog a {
@@ -72,147 +56,53 @@ nav.kalog li{
     cursor: pointer;
 }
 
-.container-dual {
+/* ===== LAYOUT MAIN CONTENT ===== */
+main {
     display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    padding: 30px;
+    gap: 20px;
+    padding: 20px;
     background-color: #f5f5f5;
 }
 
-.left-panel, .right-panel {
-    flex: 1;
+/* Content (artikel) */
+#content {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+article {
     padding: 20px;
     border-radius: 10px;
     background-color: white;
-    box-shadow: 0 400px 80px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Buat batasan lebar panel kiri */
-.left-panel {
-    max-width: 300px;
+/* Aside (profil) */
+aside {
+    flex: 1;
+    max-width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
-.profile-photo {
+aside img {
     width: 80%;
-    height: 70%;
     border-radius: 10px;
     margin-bottom: 15px;
 }
 
-.right-panel {
-    flex: 2;
-}
-
-
-/* Untuk container 2 */
-
-.container-dual2 {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    padding: 30px;
-    background-color: #f5f5f5;
-    align-items: stretch; /* Bikin box kiri & kanan sejajar tingginya */
-}
-
-
-.left-panel2, .right-panel2 {
-    flex: 1;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: white;
-    box-shadow: 0 400px 80px rgba(0, 0, 0, 0.1);
-}
-
-/* Buat batasan lebar panel kiri */
-.left-panel2 {
-    max-width: 300px;
-    text-align: center;
-    min-height: 900px; /* atur sesuai kebutuhan */
-}
-
-
-.profile-photo2 {
-    width: 70%;
-    height: 40%;
-    border-radius: 100px;
-    margin-bottom: 1px;
-}
-
-.right-panel2 {
-    flex: 2;
-}
-
-
-/* Untuk container 3 */
-
-.container-dual3 {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    padding: 30px;
-    background-color: #f5f5f5;
-    align-items: stretch; /* Bikin box kiri & kanan sejajar tingginya */
-}
-
-
-.left-panel3, .right-panel3 {
-    flex: 1;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: white;
-    box-shadow: 0 400px 80px rgba(0, 0, 0, 0.1);
-}
-
-/* Buat batasan lebar panel kiri */
-.left-panel3 {
-    max-width: 300px;
-    text-align: center;
-    min-height: 900px; /* atur sesuai kebutuhan */
-}
-
-
-.profile-photo3 {
-    width: 80%;
-    height: 50%;
-    border-radius: 100px;
-    margin-bottom: 1px;
-}
-
-.right-panel3 {
-    flex: 2;
-}
-
-
-aside {
-    flex: 5;
-
-}
-
-main {
-    padding: 20px;
-}
-
-header {
-    display: inline;
-}
-
-@media screen and (max-width: 1000px) {
-    #content, aside {
-    width: 100%;
-    padding: 0;
-}
-}
-
-.containerfooter{
+/* ===== FOOTER ===== */
+.containerfooter {
     background: linear-gradient(to right, #cccaca, #e8e8f3);
     color: rgb(0, 0, 0);
     padding: 20px 30px;
     text-align: center;
     font-family: 'Arial', sans-serif;
-    margin-top: 1px;
     border-top: 1px solid #ffffff;
     box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.8);
 }
@@ -233,8 +123,12 @@ header {
     color: #000000;
 }
 
-article {
-    width: 100%;
-    max-width: 1000px;
-    margin: auto;
+/* ===== RESPONSIVE ===== */
+@media screen and (max-width: 1000px) {
+    main {
+        flex-direction: column;
+    }
+    #content, aside {
+        max-width: 100%;
+    }
 }
